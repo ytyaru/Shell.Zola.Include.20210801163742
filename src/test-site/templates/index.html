@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ config.title }}</title>
+    {% include "include/head-link-css.html" %}
+</head>
+<body>
+<h1>{{ config.title }}</h1><p>{{ config.description | safe }}</p>
+<a href="/about">about</a>
+<footer>© 2021 {{ config.extra.author }}</footer>
+</body>
+</html>
+
